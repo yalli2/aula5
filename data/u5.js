@@ -1,0 +1,30 @@
+AULA.unit({
+  n: 5, title: 'Vivir para trabajar', ko: '일하기 위해 산다? — 회사 소개 웹페이지',
+  goal: '일의 자질·업무·문제·감정 말하기, 회사 소개하기, 격식 있는 글쓰기 — 회사 웹사이트 소개 페이지 쓰기',
+  can: ['양보절: aunque, a pesar de, por mucho que', '바꿔 말하기: es decir, o sea, esto es', '예시: por ejemplo, a modo de ejemplo', '격식 문서의 특징'],
+  tags: ['concesivas', 'aunque', 'a pesar de', 'por mucho que', 'reformular', 'ejemplificar', 'trabajo', 'empresa', 'textos formales'],
+  vocab: [
+    { g: '일·업무 · Trabajo', w: [['la jornada laboral', '근무 시간'], ['la conciliación', '일·가정 양립'], ['el horario intensivo', '집중 근무제'], ['el ascenso', '승진'], ['la plantilla', '전 직원'], ['el/la jefe/-a de equipo', '팀장'], ['la productividad', '생산성'], ['las horas extra', '초과 근무'], ['el estrés laboral', '업무 스트레스'], ['el agotamiento (burnout)', '번아웃'], ['el ambiente de trabajo', '업무 분위기'], ['la formación continua', '지속적 연수']] },
+    { g: '회사 · Empresa', w: [['la empresa emergente (startup)', '스타트업'], ['la pyme', '중소기업'], ['la sede', '본사'], ['la filial', '지사·자회사'], ['la misión', '사명'], ['la visión', '비전'], ['los valores', '가치'], ['el sector', '업계'], ['la trayectoria', '연혁·경력'], ['la clientela', '고객층'], ['el compromiso social', '사회적 책임']] },
+    { g: '자질 · Cualidades', w: [['la capacidad de liderazgo', '리더십'], ['la capacidad de trabajo en equipo', '팀워크 능력'], ['la iniciativa', '주도성'], ['la polivalencia', '다재다능함'], ['la empatía', '공감 능력'], ['la resolución de problemas', '문제 해결 능력'], ['la gestión del tiempo', '시간 관리']] }
+  ],
+  gram: [
+    { h: '양보절 (concesivas)', t: [['구문', '예'], ['aunque + 직설법 (사실)', 'Aunque gano poco, me gusta mi trabajo.'], ['aunque + 접속법 (가정·상관없음)', 'Aunque me paguen más, no me cambiaré.'], ['a pesar de + 명사/원형', 'A pesar del estrés, está contento.'], ['a pesar de que + 직설법/접속법', 'A pesar de que trabaja mucho, tiene tiempo libre.'], ['por mucho que + 접속법', 'Por mucho que trabajes, nunca termina.'], ['por más que + 접속법', 'Por más que lo intento… (사실이면 직설법)']] },
+    { h: '바꿔 말하기 · 예시', ex: [['Ofrecemos horario flexible, es decir, cada uno elige su hora de entrada.', '유연 근무제, 즉 각자 출근 시간을 정합니다.'], ['Tenemos muchas ventajas; por ejemplo, comida gratis.', '혜택이 많습니다. 예를 들어 무료 식사.']] },
+    { h: '격식 있는 글의 특징', p: '1인칭 복수(Somos…, Ofrecemos…) · 명사화 · 비인칭 se · 정중한 usted · 연결어(asimismo, por otra parte, en definitiva)' }
+  ],
+  ex: [
+    { k: 'fill', t: 'aunque + 직설법? 접속법?', it: ['Aunque {*tengo|tenga} mucho trabajo, hoy iré al gimnasio. (사실)', 'Aunque me {ofrecen|*ofrezcan} un ascenso, no pienso mudarme. (가정)', 'Aunque {*es|sea} joven, ya dirige un equipo. (사실)', 'No lo aceptaré aunque me {pagan|*paguen} el doble.'] },
+    { k: 'fill', t: 'a pesar de / por mucho que', it: ['[A pesar] del sueldo bajo, me encanta mi trabajo.', 'Por mucho que [estudies], si no duermes, no rendirás. (estudiar)', 'A pesar de [que] trabaja doce horas, siempre sonríe.', 'Por mucho que lo [intente], no consigo terminar a tiempo. (intentar)'] },
+    { k: 'mc', t: '바꿔 말하기 / 예시 연결어', audio: false, it: [['Trabajo en remoto, ___, desde casa.', '*es decir|por ejemplo|a pesar de'], ['Hay muchas startups en Madrid; ___, Cabify o Glovo.', 'o sea|*por ejemplo|aunque'], ['Tiene una actitud muy proactiva, ___, siempre propone ideas.', '*o sea|a modo de ejemplo|sin embargo'], ['Valoramos las competencias digitales, ___, el manejo de hojas de cálculo.', 'es decir|aunque|*como por ejemplo']] },
+    { k: 'sort', t: '장점? 단점?', cats: ['😊 ventaja', '😩 inconveniente'], it: [['el horario flexible', 0], ['las horas extra sin pagar', 1], ['un buen ambiente de trabajo', 0], ['el estrés laboral', 1], ['la formación continua', 0], ['la falta de conciliación', 1]] },
+    { k: 'tf', t: '읽기 — 회사 소개 페이지', text: '**Quiénes somos — VERDEA**\nSomos una empresa emergente fundada en Valencia en 2019 que diseña huertos urbanos para azoteas. Nuestra misión es acercar la naturaleza a la ciudad, es decir, que cualquier persona pueda cultivar sus propios alimentos. A pesar de ser un equipo pequeño, hoy tenemos clientes en seis países. Ofrecemos a nuestra plantilla horario flexible y formación continua; asimismo, cada viernes por la tarde la dedicamos a proyectos sociales. En definitiva, creemos que otra forma de trabajar es posible.',
+      it: [['Verdea se fundó en Valencia.', true], ['Diseñan huertos en azoteas.', true], ['Tienen clientes solo en España.', false], ['Ofrecen horario flexible.', true], ['Los viernes por la tarde no trabajan.', false]] },
+    { k: 'dlg', t: '듣기 — 직장 고민', listen: 1,
+      lines: [['Clara', '¿Qué tal en el nuevo trabajo?'], ['Pablo', 'Pues aunque el sueldo es bueno, estoy agotado. Hago muchas horas extra.'], ['Clara', '¿Y no puedes hablar con tu jefa?'], ['Pablo', 'Por mucho que se lo diga, no cambia nada. Me dice que es temporal.'], ['Clara', 'Ya… A pesar de todo, ¿te gusta lo que haces?'], ['Pablo', 'Sí, mucho. Es decir, el problema no es el trabajo, es la organización.']],
+      it: [['Pablo의 상황은?', '*월급은 좋지만 지쳐 있다|월급이 적다|일이 싫다'], ['상사의 반응은?', '바로 바꿔 줬다|*일시적이라고만 한다|화를 냈다'], ['Pablo가 생각하는 진짜 문제는?', '일 자체|월급|*조직 운영']] },
+    { k: 'order', t: '문장 만들기', it: ['Aunque gano poco, me gusta mi trabajo.', 'A pesar del estrés, está muy contenta.', 'Por mucho que trabajes, no terminarás hoy.', 'Ofrecemos horario flexible, es decir, sin horas fijas.'] },
+    { k: 'dict', t: '받아쓰기', it: ['Nuestra misión es cuidar el planeta.', 'A pesar de que es joven, tiene mucha experiencia.', 'Aunque me lo pidan, no lo haré.'] },
+    { k: 'write', t: '회사 소개 웹페이지 (Quiénes somos)', d: '가상의 회사를 만들어 소개 페이지를 써 보세요: 연혁, 사명(es decir), 강점(por ejemplo), 양보절, 직원 복지, 격식 있는 문체.', model: 'Quiénes somos — Hanji Lab. Somos una pequeña empresa fundada en Jeonju en 2021 que fabrica cuadernos de papel tradicional coreano. Nuestra misión es mantener viva una técnica milenaria, es decir, unir tradición y diseño moderno. Aunque somos solo doce personas, ya exportamos a Europa y América. Ofrecemos a nuestra plantilla formación continua y, por ejemplo, talleres de caligrafía cada mes. A pesar de las dificultades del sector, creemos en un crecimiento lento y responsable.' }
+  ]
+});
